@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:id="@+id/temp"
+        android:textColor="@color/black"
+        android:text="20 cel"
+        android:gravity="center"
+        android:textSize="@dimen/xxlargetext"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Dhaka"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/xlargetext"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/temp"
+
+        android:id="@+id/cityName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Cloudy"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cityName"
+        android:layout_toLeftOf="@+id/temp"
+        android:id="@+id/weatherStatus"/>
+</RelativeLayout>
