@@ -72,7 +72,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         cityNameView.setText(cityNameString);
-        statusView.setText(weatherStatus);
+        statusView.setText(capFirstLetter(weatherStatus));
 
 
    //     double tempInDouble = weatherList.getMain().getTemp();
@@ -89,7 +89,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         humadityView.setText("Humadity:"+humadityDouble+"");
     }
 
-
+    /*
+    * method for formating degree celsius
+    * */
     public String getTempdataInCalcious(double tempData){
         String temp="";
 
@@ -100,6 +102,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         temp = temp + ((char) 0x00B0) + "C";
 
         return temp;
+    }
+
+    /*
+    * method for captalize the first letter
+    * */
+    public String capFirstLetter(String text){
+        StringBuilder sb = new StringBuilder(text);
+        sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
+        return sb.toString();
     }
 
     @Override
@@ -122,7 +133,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // Add a marker in Sydney and move the camera
         LatLng location = new LatLng(lat, lon);
-        mMap.addMarker(new MarkerOptions().position(location).title(cityNameString));
+        mMap.addMarker(new MarkerOptions().position(location));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 13.0f));
 
 

@@ -74,7 +74,7 @@ public class WeatherListAdapter extends BaseAdapter {
 
 
 		cityName.setText(weatherModelArrayList.get(position).getName());
-		weatherStatus.setText(weatherModelArrayList.get(position).getWeather().get(0).getDescription());
+		weatherStatus.setText(capFirstLetter(weatherModelArrayList.get(position).getWeather().get(0).getDescription()));
 
 
 
@@ -91,14 +91,18 @@ public class WeatherListAdapter extends BaseAdapter {
 
 		temp.setText(tempString + ((char) 0x00B0) + "C" );
 
-		Log.e("Test",tempInDouble+"");
-
 
 
 		return view;
 	}
 
 
+
+	public String capFirstLetter(String text){
+		StringBuilder sb = new StringBuilder(text);
+		sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
+		return sb.toString();
+	}
 
 
 }

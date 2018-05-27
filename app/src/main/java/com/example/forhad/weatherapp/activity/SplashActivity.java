@@ -29,8 +29,6 @@ public class SplashActivity extends AppCompatActivity {
 
                 } finally {
 
-//                    startActivity(new Intent(SplashActivity.this,
-//                            DirChooserSample.class));
 
                     startActivity(new Intent(SplashActivity.this,
                             MainActivity.class));
@@ -41,9 +39,8 @@ public class SplashActivity extends AppCompatActivity {
         };
 
 
-        // if(shouldOpen()) {
         splashTread.start();
-        //  }
+
 
     }
 }

@@ -8,10 +8,10 @@
     <dimen name="side_padding">22dp</dimen>
     <dimen name="field_label_size">16sp</dimen>
 
-    <dimen name="xsmalltext">10dp</dimen>
-    <dimen name="smalltext">12dp</dimen>
-    <dimen name="mediumtext">15dp</dimen>
-    <dimen name="largetext">17dp</dimen>
-    <dimen name="xlargetext">20dp</dimen>
-    <dimen name="xxlargetext">22dp</dimen>
+    <dimen name="xsmalltext">10sp</dimen>
+    <dimen name="smalltext">12sp</dimen>
+    <dimen name="mediumtext">15sp</dimen>
+    <dimen name="largetext">17sp</dimen>
+    <dimen name="xlargetext">20sp</dimen>
+    <dimen name="xxlargetext">22sp</dimen>
 </resources>

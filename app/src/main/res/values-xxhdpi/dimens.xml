@@ -11,10 +11,10 @@
     <dimen name="bottom_margin">20dp</dimen>
     <dimen name="top_margin">10dp</dimen>
     <dimen name="btn_height">40dp</dimen>
-    <dimen name="xsmalltext">12dp</dimen>
-    <dimen name="smalltext">14dp</dimen>
-    <dimen name="mediumtext">15dp</dimen>
-    <dimen name="largetext">19dp</dimen>
-    <dimen name="xlargetext">22dp</dimen>
-    <dimen name="xxlargetext">25dp</dimen>
+    <dimen name="xsmalltext">12sp</dimen>
+    <dimen name="smalltext">14sp</dimen>
+    <dimen name="mediumtext">15sp</dimen>
+    <dimen name="largetext">19sp</dimen>
+    <dimen name="xlargetext">22sp</dimen>
+    <dimen name="xxlargetext">25sp</dimen>
 </resources>

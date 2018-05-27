@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white_text"
     tools:context=".activity.MapsActivity">
 
     <include
@@ -42,6 +43,7 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="@dimen/xlargetext"
+                tools:fontFamily="@font/roboto"
                 android:text="City Name"/>
             <TextView
                 android:layout_width="match_parent"
@@ -50,6 +52,7 @@
 
                 android:textColor="@color/black"
 
+                tools:fontFamily="@font/roboto"
                 android:layout_below="@+id/cityName"
                 android:textSize="@dimen/largetext"
                 android:text="staus"/>
@@ -61,6 +64,7 @@
                 android:textColor="@color/black"
                 android:layout_below="@+id/weatherStatus"
                 android:textSize="@dimen/largetext"
+                tools:fontFamily="@font/roboto"
                 android:text="Humadity"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -70,6 +74,7 @@
                 android:layout_below="@+id/humadity"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largetext"
+                tools:fontFamily="@font/roboto"
                 android:text="City Name"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -79,6 +84,7 @@
                 android:textColor="@color/black"
                 android:layout_below="@+id/wind"
                 android:textSize="@dimen/largetext"
+                tools:fontFamily="@font/roboto"
                 android:text="City Name"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -88,6 +94,7 @@
                 android:layout_below="@+id/max"
                 android:textColor="@color/black"
                 android:textSize="@dimen/largetext"
+                tools:fontFamily="@font/roboto"
                 android:text="City Name"/>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -104,8 +111,8 @@
                     android:textColor="@color/black"
                     android:gravity="center"
 
-
-                    android:textSize="30dp"
+                    tools:fontFamily="@font/roboto"
+                    android:textSize="25dp"
                     android:text="25C"/>
                 <ImageView
                     android:layout_width="80dp"
