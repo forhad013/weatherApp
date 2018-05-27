@@ -84,9 +84,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         maxTempView.setText("Max. Temp.: "+getTempdataInCalcious(maxTempDouble));
-        minTempView.setText("Min. Temp.:"+getTempdataInCalcious(minTempDouble));
-        windView.setText("Wind Speed:"+windDouble+"");
-        humadityView.setText("Humadity:"+humadityDouble+"");
+        minTempView.setText("Min. Temp.: "+getTempdataInCalcious(minTempDouble));
+        windView.setText("Wind Speed: "+windDouble+"");
+        humadityView.setText("Humadity: "+humadityDouble+"");
     }
 
     /*
