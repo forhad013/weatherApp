@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-         setAlarmHours(18,53);
+         setAlarmHours(12,00);
 
     }
 
@@ -112,8 +112,8 @@ public class MainActivity extends AppCompatActivity {
         Log.e("val", hours + " " + minute);
 
 
-        calendar.set(Calendar.HOUR_OF_DAY, 0);
-        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.HOUR_OF_DAY, hours);
+        calendar.set(Calendar.MINUTE, minute);
         calendar.set(Calendar.SECOND, 0);
         Intent myIntent = new Intent(getApplicationContext(), AlarmBrodcastReceiver.class);
 
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,
-                System.currentTimeMillis(), 1000 * 60  *60, pendingIntent);
+                calendar.getTimeInMillis(), 1000 * 60 * 60*24, pendingIntent);
 
 
 

@@ -25,8 +25,7 @@ public class AlarmBrodcastReceiver extends WakefulBroadcastReceiver {
         @Override
         public void onReceive(final Context context, Intent intent) {
             //this will update the UI with message
-            String text = intent.getStringExtra("reminder_id");
-            titleForReciever = intent.getStringExtra("reminder_title");
+
 
 
 

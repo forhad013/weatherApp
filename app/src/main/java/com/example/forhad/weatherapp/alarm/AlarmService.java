@@ -156,6 +156,14 @@ public class AlarmService extends IntentService {
         // Build Notification with Notification Manager
         notificationmanager.notify(007, builder.build());
 
+        try {
+            Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+            r.play();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     public String getTempdataInCalcious(double tempData) {
