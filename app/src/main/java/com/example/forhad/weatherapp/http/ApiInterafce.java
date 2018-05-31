@@ -1,8 +1,8 @@
-package com.example.forhad.weatherapp.retrofit;
+package com.example.forhad.weatherapp.http;
 
 
-import com.example.forhad.weatherapp.model.WeatherList;
-import com.example.forhad.weatherapp.model.WeatherResponse;
+import com.example.forhad.weatherapp.http.apimodel.WeatherList;
+import com.example.forhad.weatherapp.http.apimodel.WeatherResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

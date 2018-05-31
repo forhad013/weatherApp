@@ -11,15 +11,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".App"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SplashActivity">
+        <activity android:name=".activity.splash_activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.wetherlist_activity.WeatherListActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -36,16 +37,16 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".activity.MapsActivity"
+            android:name=".activity.map_activity.MapsActivity"
             android:label="">
 
         </activity>
 
         <service
-            android:name=".alarm.AlarmService"
+            android:name=".notification.NotificationService"
             android:enabled="true" />
 
-        <receiver android:name=".alarm.AlarmBrodcastReceiver" />
+        <receiver android:name=".notification.NotificationBrodcastReceiver" />
     </application>
 
 </manifest>

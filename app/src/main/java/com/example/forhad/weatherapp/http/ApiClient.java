@@ -1,4 +1,4 @@
-package com.example.forhad.weatherapp.retrofit;
+package com.example.forhad.weatherapp.http;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -20,6 +20,9 @@ public class ApiClient {
                     .build();
         }
         return retrofit;
+
+
     }
+
 
 }
