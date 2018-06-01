@@ -21,8 +21,7 @@ import permissions.dispatcher.RuntimePermissions;
 
 @RuntimePermissions
 public class SplashActivity extends AppCompatActivity implements SplashActivityMVP.View{
-    protected boolean _active = true;
-    protected int _splashTime = 2000;
+
 
 
     SplashActivityMVP.Presenter presenter;
@@ -33,7 +32,7 @@ public class SplashActivity extends AppCompatActivity implements SplashActivityM
 
         presenter = new SplashPresenterImpl(this);
 
-         SplashActivityPermissionsDispatcher.runSplashWithPermissionCheck(SplashActivity.this);
+        SplashActivityPermissionsDispatcher.runSplashWithPermissionCheck(SplashActivity.this);
 
     }
 
